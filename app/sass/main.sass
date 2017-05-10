@@ -1,0 +1,735 @@
+@import "fonts"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: #212121
+
+h1
+	font-size: 79px
+	font-family: "PlayfairDisplayItalic", sans-serif
+	color: #212121
+	background-color: rgba(255,255,255,.65)
+
+h2
+	font-size: 48px
+	font-family: "PlayfairDisplayRegular", sans-serif
+	text-align: center
+	margin-bottom: 50px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.top-line
+	background-color: #F7F7F7
+	padding: 30px 0
+
+.top-line__logo
+	position: relative
+	img
+		width: 185px
+
+.top-nav
+	margin-left: -78px
+	margin-top: 30px
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			display: inline-block
+			a
+				color: #212121
+				font-size: 12px
+				text-transform: uppercase
+				font-family: "OpenSansBold", sans-serif
+				margin: 0 10px
+				display: block
+				transition: all .25s ease
+				letter-spacing: 1.2px
+				&:hover, &:focus, &:active
+					text-decoration: none
+					color: #969696
+
+.top-line__phone
+	float: right
+	margin-top: 12px
+
+.phone_icon, .phone_number
+	display: table-cell
+	vertical-align: middle
+	font-size: 28px
+	font-family: "OpenSansBold", sans-serif
+	line-height: 1.2
+.phone_icon
+	img
+		width: 28px
+
+//toggle-menu
+.toggle-mnu 
+  display: block
+  width: 28px
+  height: 28px
+  margin-top: 14px
+  position: absolute
+  right: 55px
+  top: 30px
+
+  span:after, span:before 
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span 
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #000
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+
+  &.on span 
+    background-color: transparent
+
+  &.on span:before 
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after 
+    transform: rotate(-45deg) translate(6px, -7px)
+
+.hidden-menu
+	text-align: center
+	display: none
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			display: block
+			a
+				display: block
+				padding: 15px 0
+				color: #212121
+				font-size: 12px
+				text-transform: uppercase
+				font-family: "OpenSansBold", sans-serif
+				margin: 0 10px
+				display: block
+				transition: all .25s ease
+				letter-spacing: 1.2px
+				&:hover, &:focus, &:active
+					text-decoration: none
+					color: #969696
+					background-color: #000
+
+.header__content
+	background-image: url(../img/header/bg.jpg)
+	min-height: 300px
+	background-size: cover
+	background-position: center
+	padding: 105px 0
+
+.header__content__left
+	font-family: "PlayfairDisplayItalic", sans-serif
+	p
+		font-size: 45px
+		line-height: 1.5
+		background-color: rgba(255,255,255,.65)
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			background-color: rgba(255,255,255,.65)
+			margin-bottom: 5px
+			display: inline-block
+			font-size: 45px
+
+.header__content__form
+	background-color: #fff
+	border-radius: 3px
+	padding: 40px 30px
+	label
+		width: 100%
+	p
+		font-size: 18px
+		font-family: "OpenSansBold", sans-serif
+		text-align: center
+		line-height: 1.5
+	.form-name
+		font-size: 12px
+		display: block
+		font-family: "OpenSansBold", sans-serif
+		font-weight: normal
+
+	.form-name-star
+		color: #DB000D
+
+	.form-desc
+		font-size: 12px
+		color: #ABABAB
+		font-family: "OpenSansRegular", sans-serif
+		font-weight: normal
+	input, textarea
+		width: 100%
+		padding: 20px 10px
+		border-radius: 3px
+		border: 1px solid #ABABAB
+	.button-wrapper
+		text-align: center
+		color: #fff
+		margin-top: 15px
+		margin-bottom: 15px
+		button
+			background-color: #DB000D
+			text-transform: uppercase
+			border: none
+			border-radius: 20px
+			padding: 8px 10px 
+			width: 100%
+			font-size: 14px
+			font-family: "OpenSansBold", sans-serif
+	.form-desc-bottom
+		text-align: center
+		display: inline-block
+
+.s-1
+	text-align: center
+	padding: 50px 0 70px
+
+.s-1__number
+	display: block
+	font-size: 48px
+	color: #212121
+	position: relative
+	&::after
+		content: ''
+		display: block
+		width: 86%
+		height: 1px
+		background-color: #212121
+		opacity: .1
+		position: absolute
+		margin-left: 50%
+		transform: translateX(-50%)
+		bottom: 0
+		left: 0
+
+.s-all
+	padding: 60px 0
+
+.s-1__text
+	font-size: 14px
+	color: #212121
+	display: block
+	margin-top: 5px
+
+.s-2
+	background-image: url(../img/section2/bg.jpg)
+	h2
+		color: #fff
+
+.s-2__item
+	margin-bottom: 30px
+
+.s-2__item__bottom
+	background-color: #fff
+	text-align: center
+	padding: 25px 15px
+	height: 340px
+	position: relative
+
+.s-2__item__head
+	font-size: 18px
+	font-family: "OpenSansBold", sans-serif
+	display: block
+.s-2__item__desc
+	font-size: 14px
+	display: block
+.s-2__item__price
+	width: 100%
+	position: absolute
+	bottom: 7%
+	left: 0
+.old-prise
+	font-size: 27px
+	font-family: "OpenSansBold", sans-serif
+	display: block
+	text-decoration: line-through
+	margin-bottom: -10px
+.new-prise
+	font-size: 27px
+	font-family: "OpenSansBold", sans-serif
+	display: block
+.s-2__item__button
+	display: inline-block
+	margin-top: 20px
+	background-color: #DB0000
+	color: #fff
+	border: none
+	border-radius: 20px
+	padding: 10px 70px
+	font-family: "OpenSansBold", sans-serif
+	font-size: 14px
+	transition: all .25s ease
+	&:hover, &:focus, &:active
+		cursor: pointer
+		text-decoration: none
+		color: #fff
+		background-color: darken(#DB0000, 5%)
+
+.s-2__item__top
+	position: relative
+
+.popup-window
+	h3
+		font-size: 18px
+		font-family: "OpenSansBold", sans-serif
+	label
+		width: 100%
+		text-align: left
+	input
+		display: block
+		border-radius: 3px
+		border: 1px solid rgba(#000, .5)
+		padding: 5px 10px
+		width: 100%
+	.form-name
+		font-size: 12px
+	.form-name-star
+		color: #DB0000
+	.form-desc
+		font-size: 12px
+		opacity: .5
+	.button-wrapper
+		margin-top: 15px
+		margin-bottom: 15px
+		color: #fff
+		button
+			background-color: #DB0000
+			border: none
+			border-radius: 20px
+			padding: 5px 20px
+			width: 100%
+
+.fotorama__nav-wrap
+	position: absolute
+	bottom: 0
+	left: 0
+
+.s-3
+	text-align: center
+.s-3__item
+	margin-bottom: 30px
+.s-3__item__img
+	border-radius: 100%
+	border: 2px solid #4D69BE
+	width: 70px
+	height: 70px
+	display: inline-block
+	img
+		margin-top: 15px
+		margin-left: 2px
+		width: 35px
+.s-3__item__text
+	span
+		font-size: 18px
+		font-family: "OpenSansBold", sans-serif
+		margin-top: 20px
+		display: block
+	p
+		font-size: 14px
+		display: block
+		margin-top: 10px
+
+.s-4
+	background-color: #F7F7F7
+.s-4__fotorama
+	.fotorama__nav-wrap
+		margin-top: 10px
+		position: relative
+	.fotorama__thumb-border
+		display: none
+	.fotorama__nav__frame--thumb
+		opacity: .5
+		margin: 0 10px
+	.fotorama__active
+		opacity: 1
+
+.s-4__item
+	margin-bottom: 150px
+.s-4__item-last
+	margin-bottom: 0
+.s-4__item__text
+	border-bottom: 1px solid rgba(#212121, .1)
+	padding-bottom: 20px
+	margin-bottom: 30px
+	p
+		font-size: 16px
+
+.s-4__item__button
+	display: inline-block
+	text-transform: uppercase
+	background-color: #DB0000
+	color: #fff
+	border: none
+	border-radius: 20px
+	padding: 10px 20px
+	font-family: "OpenSansBold", sans-serif
+	font-size: 14px
+	&:hover, &:active, &:focus
+		cursor: pointer
+		text-decoration: none
+		color: #fff
+.s-4__item__price
+	float: right
+	font-size: 20px
+	font-family: "OpenSansBold", sans-serif
+
+.s-4__item__text__name
+	font-size: 24px
+	font-family: "OpenSansBold", sans-serif
+
+.s-4__item__text__desc
+	font-size: 14px
+	display: block
+
+.s-5
+	background-image: url(../img/section5/bg.jpg)
+	color: #fff
+.s-5__item
+	width: 200px
+	text-align: center
+	display: inline-block
+	vertical-align: top
+	margin: 0 12px
+.s-5__item__number
+	position: relative
+	background-color: #fff
+	border-radius: 100%
+	color: #5C75C1
+	height: 50px
+	width: 50px
+	display: inline-block
+	padding: 7px
+	font-size: 20px
+	font-family: "OpenSansBold", sans-serif
+	font-weight: normal
+	margin-bottom: 15px
+	&::after
+		content: ''
+		width: 100px
+		height: 1px
+		position: absolute
+		background-color: #fff
+		top: 23px
+		left: 88px
+.s-5__item__number-last
+	&::after
+		display: none
+.s-5__item__text
+	font-size: 14px
+
+.s-6__item
+	margin-bottom: 50px
+.s-6__item-last
+	margin-bottom: 0
+.s-6__item__img
+	text-align: center
+	img
+		display: inline-block
+.s-6__item__name, .s-6__item__desc
+	display: block
+	text-align: center
+.s-6__item__name
+	margin-top: 20px
+	font-size: 18px
+	font-family: "OpenSansBold", sans-serif
+.s-6__item__desc
+	font-size: 14px
+
+.s-7
+	background-image: url(../img/section7/bg.jpg)
+	background-size: cover
+	background-position: center
+	color: #fff
+	h2
+		font-family: "PlayfairDisplayBold", sans-serif
+	.form-name
+		font-size: 12px
+		font-family: "OpenSansBold", sans-serif
+		font-weight: normal
+	.form-name-star
+		color: #DB000D
+	input
+		width: 100%
+		padding: 10px 10px
+		border-radius: 5px
+		border: 1px solid #ABABAB
+	.button-wrapper
+		margin-top: 28px
+		button
+			background-color: #B8000B
+			border: none
+			border-radius: 20px
+			padding: 10px 40px
+.s-7__contact-form
+	margin-left: 60px
+
+.s-8
+	padding-bottom: 10px
+	text-align: center
+	.s-8__item
+		margin-bottom: 50px
+		display: inline-block
+	img
+		width: 100%
+.s-8__item__name, .s-8__item__desc
+	display: block
+.s-8__item__name
+	font-size: 18px
+	font-family: "OpenSansBold", sans-serif
+.s-8__item__desc
+	font-size: 14px
+
+.s-9
+	background-color: #FAFAFA
+	text-align: center
+	a
+		display: inline-block
+		transition: all .5s ease
+		&:hover
+			transform: scale(1.1)
+.s-9__popup__wrapper
+	overflow: hidden
+
+//magnific-popup
+.mfp-no-margins
+  img.mfp-img
+    padding: 0
+  .mfp-figure:after
+    top: 0
+    bottom: 0
+  .mfp-container
+    padding: 0
+.mfp-with-zoom
+  .mfp-container, &.mfp-bg
+    opacity: 0
+    -webkit-backface-visibility: hidden
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+  &.mfp-ready
+    .mfp-container
+      opacity: 1
+    &.mfp-bg
+      opacity: 0.8
+  &.mfp-removing
+    .mfp-container, &.mfp-bg
+      opacity: 0
+
+.my-mfp-zoom-in
+  .zoom-anim-dialog
+    opacity: 0
+    transition: all 0.2s ease-in-out
+    transform: scale(0.8)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog
+    transform: scale(0.8)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+#small-dialog
+	background: white
+	padding: 20px 30px
+	text-align: center
+	max-width: 400px
+	margin: 40px auto
+	position: relative
+
+
+.s-10
+	background-image: url(../img/section10/bg.jpg)
+	background-size: cover
+	background-position: center
+	color: #fff
+
+.s-10__fotorama
+	position: relative
+	overflow: hidden
+	&:hover
+		.fotorama__img
+			transform: scale(1.1)
+			transition: all .5s ease
+		.s-10__fotorama__text
+			opacity: 1
+
+.s-10__fotorama__text
+	transition: all .5s ease
+	text-align: center
+	display: block
+	position: absolute
+	background-color: rgba(#000, .5)
+	width: 100%
+	height: 100%
+	opacity: 0
+	top: 0
+	left: 0
+	padding: 19%
+	p
+		font-size: 20px
+		strong
+			font-size: 28px
+
+.s-11
+	text-align: center
+	font-size: 16px
+	h2
+		margin-bottom: 20px
+.s-11__fotorama
+	margin-top: 30px
+	display: inline-block
+	text-align: left
+	position: relative
+	.fotorama__nav-wrap
+		position: relative
+	color: #fff
+.s-11__fotorama__text
+	position: absolute
+	bottom: 50px
+	left: 50px
+	line-height: 1.3
+	span
+		font-size: 14px
+
+.s-12
+	background-image: url(../img/section12/bg.jpg)
+	background-size: cover
+	background-position: center
+	.header__content__form
+		label
+			input
+				padding: 10px 10px
+		button
+			text-transform: none
+
+.s-13
+	position: relative
+.s-13__text
+	position: absolute
+	top: 50px
+	right: 50px
+	background-color: #fff
+	border-radius: 5px
+	padding: 15px
+	font-size: 14px
+	strong
+		font-size: 18px
+
+.footer__desc
+	margin-top: 40px
+	display: block
+	font-size: 28px
+	font-family: "PlayfairDisplayItalic", sans-serif
+.footer__socials
+	text-align: right
+	margin-top: 15px
+	.fa
+		border-radius: 100%
+		height: 30px
+		width: 30px
+		text-align: center
+		padding-top: 8px
+		color: #fff
+		font-size: 14px
+		transition: all .25s ease
+		margin-left: 7px
+		&:hover
+			opacity: .7
+	.fa-vk
+		background-color: #4C6C91
+	.fa-facebook
+		background-color: #3B5998
+	.fa-odnoklassniki
+		background-color: #F68634
+	.fa-youtube
+		background-color: #CE1312
+	.fa-instagram
+		background-color: #DA307D
+
+
+.thx
+	background-color: rgba(255,255,255,1)
+	position: fixed
+	left: 50%
+	transform: translate(-50%, 0)
+	top: 50%
+	border-radius: 4px
+	z-index: 999
+	font-size: 30px
+	color: #DB0000
+	text-align: center
+	padding: 10px 10px
+	font-family: "PFCentroSlabProMedium", sans-serif
+	opacity: 0
+	transition: all .5s ease
+	visibility: hidden
+.thx-active
+	opacity: 1
+	visibility: visible
+
+
+
+@import "media" // Всегда в конце
